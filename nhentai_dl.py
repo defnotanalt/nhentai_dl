@@ -48,7 +48,11 @@ def __get_links(sacred_num):
 
 def __create_dir(sacred_num):
     path = os.getcwd()
-    path = (path + "/" + str(sacred_num))
+    try:
+        os.mkdir(path + "/out_files")
+    except FileExistsError:
+        path = path
+    path = (path + "/out_files/" + str(sacred_num))
     try:
         os.mkdir(path)
     except FileExistsError:
@@ -76,7 +80,7 @@ def __convert(sacred_num):
     i = 1
     path = os.getcwd()
     while(i <= length):
-        path = (path + "/" + str(sacred_num) + f"/{i}")
+        path = (path + "/out_files/" + str(sacred_num) + f"/{i}")
         try:
             img = Image.open((path + ".jpg"))
             img.save((path + ".png"))
