@@ -45,12 +45,6 @@ def __get_links(sacred_num):
             print(e)
             print("The program will now exit.")
             exit()
-    
-
-def __diag(sacred_num, LINK_BASE, id_link):
-    print("Diag s_num: " + sacred_num)
-    print("Diag l_base: " + LINK_BASE)
-    print("Diag id_link: " + id_link)
 
 def __create_dir(sacred_num):
     path = os.getcwd()
