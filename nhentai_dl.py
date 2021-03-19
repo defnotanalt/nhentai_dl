@@ -35,7 +35,6 @@ def __get_links(sacred_num):
     doujin = nhentai._get_doujin(id=f'{sacred_num}')
     if(doujin == None):
         raise Exception("This sacred number doesn't exist! Sorry!")
-        exit()
     else:
         try:
             links = doujin.images
