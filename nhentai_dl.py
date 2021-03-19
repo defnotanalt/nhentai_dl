@@ -85,11 +85,8 @@ def __convert(sacred_num):
             img = Image.open((path + ".jpg"))
             img.save((path + ".png"))
             os.remove((path + ".jpg"))
-        except e:
-            print("An unknown error occured during image conversion The program will exit: ")
-            print()
-            print(e)
-            exit()
+        except FileNotFoundError as e:
+            path = path
         path = os.getcwd()
         i = i + 1
 
