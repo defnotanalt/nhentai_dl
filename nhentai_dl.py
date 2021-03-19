@@ -83,7 +83,7 @@ def __convert(sacred_num):
         path = (path + "/out_files/" + str(sacred_num) + f"/{i}")
         try:
             img = Image.open((path + ".jpg"))
-            img.save((path + ".png"))
+            img.convert('RGB').save((path + ".png"))
             os.remove((path + ".jpg"))
         except FileNotFoundError as e:
             path = path
