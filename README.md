@@ -1,6 +1,6 @@
 # nhentai_dl
 
-A really, really, lazy way to download and convert images for use with [hent-AI](https://github.com/natethegreate/hent-AI) and [DeepCreamPy](https://github.com/deeppomf/DeepCreamPy).
+A really, really, lazy way to download and convert images for use with [hent-AI](https://github.com/natethegreate/hent-AI) and [DeepCreamPy](https://github.com/mao-shonen/DeepCreamPy-archived).
 
 ## What does it do?
 
